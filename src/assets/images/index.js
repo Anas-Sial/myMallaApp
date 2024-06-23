@@ -10,4 +10,9 @@ export const IMAGES = {
     saleTag: require('./saleTag.png'),
     gPay: require('./gPay.png'),
     mapImage: require('./mapImage.png'),
+    home: require('./home.png'),
+    heart: require('./heart.png'),
+    read: require('./read.png'),
+    favourite: require('./favourite.png'),
+    checkout: require('./checkout.png')
 }

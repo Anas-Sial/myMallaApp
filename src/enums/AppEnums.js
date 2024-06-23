@@ -9,8 +9,11 @@ export const SCREEN = {
     CHOOSELOCATION: 'ChooseLocation',
     MAPSCREEN: 'MapScreen',
     ORDERSTATUS: 'OrderStatus',
-    SUMMARY: 'OrderSummary'
-
+    SUMMARY: 'OrderSummary',
+    CHECKOUT: 'Checkout',
+    FAVOURITE: 'Favourite',
+    HEART: 'Heart',
+    READ: 'Read',
 }
 
 export const KEYBOARD_TYPE = {

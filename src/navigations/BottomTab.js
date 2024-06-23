@@ -6,6 +6,7 @@ import { SCREEN } from "../enums/AppEnums";
 import Icon from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { COLOR, hp } from "../enums/StyleGuide";
+import { IMAGES } from "../assets/images";
 
 const Tab = createBottomTabNavigator()
 const BottomTab = () => {
@@ -24,27 +25,69 @@ const BottomTab = () => {
         options={{
           tabBarIcon: ({ focused }) => (
             <View style={styles.container}>
-              <Icon
-                name="home"
-                size={24}
-                color={focused ? COLOR.black : COLOR.lightGray}
-              />
+              <Image source={IMAGES.home} style={{
+                ...styles.imageStyle, tintColor
+                  : focused ? COLOR.primary : COLOR.gray
+              }} />
             </View>
           ),
         }}
       />
 
       <Tab.Screen
-        name={SCREEN.CART}
+        name={SCREEN.HEART}
         component={ui.CartScreen}
         options={{
           tabBarIcon: ({ focused }) => (
             <View style={styles.container}>
-              <Ionicons
-                name="bag-check-outline"
-                size={24}
-                color={focused ? COLOR.black : COLOR.lightGray}
-              />
+              <Image source={IMAGES.heart} style={{
+                ...styles.imageStyle, tintColor
+                  : focused ? COLOR.primary : COLOR.gray
+              }} />
+            </View>
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name={SCREEN.CHECKOUT}
+        component={ui.CartScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <View style={styles.container}>
+              <Image source={IMAGES.checkout} style={{
+                width: 50, height: 50, resizeMode: "contain", bottom: 26
+              }} />
+            </View>
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name={SCREEN.READ}
+        component={ui.CartScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <View style={styles.container}>
+              <Image source={IMAGES.read} style={{
+                ...styles.imageStyle, tintColor
+                  : focused ? COLOR.primary : COLOR.gray
+              }} />
+            </View>
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name={SCREEN.FAVOURITE}
+        component={ui.CartScreen}
+        options={{
+          tabBarIcon: ({ focused }) => (
+            <View style={styles.container}>
+              <Image source={IMAGES.favourite} style={{
+                ...styles.imageStyle, tintColor
+                  : focused ? COLOR.primary : COLOR.gray
+              }} />
             </View>
           ),
         }}
@@ -69,8 +112,8 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   imageStyle: {
-    width: 20,
-    height: 20,
+    width: 24,
+    height: 24,
     resizeMode: "contain"
   }
 })

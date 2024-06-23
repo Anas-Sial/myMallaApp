@@ -8,4 +8,6 @@ export const IMAGES = {
     handiImage: require('./handi.png'),
     handiImage2: require('./handiImage2.png'),
     saleTag: require('./saleTag.png'),
+    gPay: require('./gPay.png'),
+    mapImage: require('./mapImage.png'),
 }

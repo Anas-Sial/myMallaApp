@@ -20,9 +20,11 @@ export const COLOR = {
     dark: '#000000',
     black: '#222222',
     red: '#FC4E4E',
+    darkRed:'#E31D1D',
     blue_02: 'rgba(0, 58, 107, 0.2)',
     lightPink: '#FFB7B2',
     light: '#FFEDEB',
+    blue:'#007ABE'
 }
 
 export const FONT = {
@@ -33,25 +35,21 @@ export const FONT = {
 }
 
 export const TEXT_STYLE = StyleSheet.create({
-    titleBold: {
-        fontFamily: FONT.bold,
-        fontSize: 22,
-    },
     smallTitleBold: {
         fontFamily: FONT.bold,
-        fontSize: 20,
+        fontSize: 18,
     },
     smallTitleSemiBold: {
         fontFamily: FONT.semiBold,
-        fontSize: 20,
+        fontSize: 18,
     },
     smallTitleMedium: {
         fontFamily: FONT.medium,
-        fontSize: 20,
+        fontSize: 18,
     },
     bigText: {
         fontFamily: FONT.regular,
-        fontSize: 16,
+        fontSize: 18,
     },
     bigTextSemiBold: {
         fontFamily: FONT.semiBold,

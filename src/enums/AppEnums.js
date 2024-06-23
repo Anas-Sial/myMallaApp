@@ -4,7 +4,12 @@ export const SCREEN = {
     HOME: 'HomeScreen',
     NEABYSHOPS: 'NearYouShops',
     STORESCREEN: 'StoreScreen',
-    CART: 'CartScreen'
+    CART: 'CartScreen',
+    BOTTOMTAB: 'BottomTab',
+    CHOOSELOCATION: 'ChooseLocation',
+    MAPSCREEN: 'MapScreen',
+    ORDERSTATUS: 'OrderStatus',
+    SUMMARY: 'OrderSummary'
 
 }
 

@@ -6,7 +6,7 @@ import { hp, FONT, COLOR, TEXT_STYLE, commonStyles, wp } from '../../enums/Style
 import { IMAGES } from '../../assets/images'
 
 const ProductDetailModel = (props) => {
-    const { visible, onRequestClose, foodName, rating, description, buttonTitle, discountedPrice, orignalPrice,onAddPress } = props
+    const { visible, onRequestClose, foodName, rating, description, buttonTitle, discountedPrice, orignalPrice, onAddPress, addDropDown } = props
 
     return (
         <Modal
@@ -30,10 +30,11 @@ const ProductDetailModel = (props) => {
                     </View>
                     <Text style={styles.discriptionModel}>{description}</Text>
                     <View style={styles.dropDownContainer}>
-                        <Pressable style={styles.menuContainer}>
+                        {/* <Pressable style={styles.menuContainer}>
                             <Text style={styles.menuLabel}>{buttonTitle}</Text>
                             <ArrowDown />
-                        </Pressable>
+                        </Pressable> */}
+                        {addDropDown}
                         <SvgElement name={HeartSvg} style={styles.heartIcon} />
                     </View>
                     <View style={styles.priceContainer}>

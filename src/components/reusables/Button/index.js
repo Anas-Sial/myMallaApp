@@ -1,4 +1,4 @@
-import { ActivityIndicator, StyleSheet, TouchableOpacity ,Text} from 'react-native'
+import { ActivityIndicator, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import React, { memo } from 'react'
 import { COLOR, TEXT_STYLE, hp, commonStyles, ACTIVE_OPACITY } from '../../../enums/StyleGuide'
 import { emptyFunction } from '../../../utils/Helpers'
@@ -36,5 +36,6 @@ const styles = StyleSheet.create({
     ButtonText: {
         ...TEXT_STYLE.bigTextSemiBold,
         color: COLOR.white,
+        lineHeight: 20.16
     },
 })

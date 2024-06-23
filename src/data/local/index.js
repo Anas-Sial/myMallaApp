@@ -85,6 +85,8 @@ export const nearbyStores = [
 ]
 
 export const buttonTitles = [{ name: 'Offers' }, { name: 'Top rated' }, { name: 'Loose' }, { name: 'Combo' }]
+export const modalButtons = [{ name: 'Home' }, { name: 'Office' }, { name: 'Hotel' }, { name: 'Other' }]
+
 
 export const resturantItems = [
     { itemName: 'Atta / Flour', weight: '1 kg', price: '₹550.00', originalPrice: '₹650.00' },
@@ -137,9 +139,52 @@ export const grocerData = [
         name: 'Chicken Biriyani',
         price: '₹450.00',
         originalPrice: '₹650.00',
-                menuOptions: [
-                    { id: 'full', label: 'Full Plate', price: '₹450.00' },
-                    { id: 'half', label: 'Half Plate', price: '₹250.00' },
-                ],
+        menuOptions: [
+            { id: 'full', label: 'Full Plate', price: '₹450.00' },
+            { id: 'half', label: 'Half Plate', price: '₹250.00' },
+        ],
+    },
+]
+export const addresses = [
+    {
+        id: '1',
+        location: 'Home',
+        address: 'Tirupati Complex Court More, Asansol',
+    },
+    {
+        id: '2',
+        location: 'Office',
+        address: 'Tirupati Complex Burnpur Road, Court More, Asansol, 713304',
+    },
+    {
+        id: '3',
+        location: 'Other',
+        address: 'Tirupati Complex Burnpur Road, Court More, Asansol, 713304',
+    },
+];
+
+export const dropDownData = [
+    { label: 'Full Plate', value: 'Full Plate' },
+    { label: 'half Plate', value: 'half Plate' },
+]
+
+export const productList = [
+    {
+        id: 1,
+        name: 'Chicken Biriyani',
+        rating: '4.2',
+        price: '₹450.00',
+        discountedPrice: '₹650.00',
+        image: IMAGES.handiImage2,
+        dropdownData: [{ label: 'Full Plate', value: 'Full Plate' }, { label: 'Half Plate', value: 'Half Plate' }],
+    },
+    {
+        id: 2,
+        name: 'Chicken Biriyani',
+        rating: '4.2',
+        price: '₹450.00',
+        discountedPrice: '₹650.00',
+        image: IMAGES.handiImage2,
+        dropdownData: [{ label: 'Full Plate', value: 'Full Plate' }, { label: 'Half Plate', value: 'Half Plate' }],
     },
 ]

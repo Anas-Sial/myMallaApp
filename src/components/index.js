@@ -12,6 +12,9 @@ import RestaurantCard from './RestaurantCard'
 import RecommendationButton from './RecommendationButton'
 import ProductDetailModel from './ProductDetailModel'
 import FilterModel from './FilterModel'
+import BillCard from './BillCard'
+import CardHeader from './CardHeader'
+import ProductCard from './ProductsCard'
 
 export {
     HomeHeader,
@@ -23,5 +26,8 @@ export {
     RestaurantCard,
     RecommendationButton,
     ProductDetailModel,
-    FilterModel
+    FilterModel,
+    BillCard,
+    CardHeader,
+    ProductCard
 }
